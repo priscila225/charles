@@ -14,11 +14,11 @@ You are tunneling between your PC and your mobile device as a proxy
   * [How to Install](#how-to-install)
     + [Android](#android)
       - [Android N (7.0, API level 24) and afterwards](#android-n--70--api-level-24--and-afterwards)
-  * [How to get the information you want?](#how-to-get-the-information-you-want-)
-  * [How to import session?](#how-to-import-session-)
+  * [How to get the information you want?](#how-to-get-the-information-you-want)
+  * [How to import session?](#how-to-import-session)
   * [Common Questions & Bugs](#common-questions---bugs)
-    + [Why I am not seeing the logs at all?](#why-i-am-not-seeing-the-logs-at-all-)
-    + [How to check if the port is in use?](#how-to-check-if-the-port-is-in-use-)
+    + [Why I am not seeing the logs at all?](#why-i-am-not-seeing-the-logs-at-all)
+    + [How to check if the port is in use?](#how-to-check-if-the-port-is-in-use)
     + [Still not seeing the logs and it's not the port or device proxy](#still-not-seeing-the-logs-and-it-s-not-the-port-or-device-proxy)
 
 ## How to Install
@@ -113,12 +113,12 @@ Now the SSL proxying should work for your app's debug build variant, but not for
 
 ## How to get the information you want?
 
-1 - After all setup above to record a session you should enable the record button on charles UI.
+1. After all setup above to record a session you should enable the record button on charles UI.
 
 <img src="https://github.com/priscila225/charles/blob/master/img/record.png" width="400">
 
-2 - Now open the debug app on your mobile device. **Navigate on app doing the steps provided for you.**
-3 - Start to search what you need (command + F on mac or ctrl + F on windows) to make sure you session gets that. Example: if its an ad search by keyword "pubads" or something like that. If it's ads tag, provide the tags on search.. 
+2. Now open the debug app on your mobile device. **Navigate on app doing the steps provided for you.**
+3.  Start to search what you need (command + F on mac or ctrl + F on windows) to make sure you session gets that. Example: if its an ad search by keyword "pubads" or something like that. If it's ads tag, provide the tags on search.. 
 If its some url, provide part of the url and you will able to get it
 
 <img src="https://github.com/priscila225/charles/blob/master/img/charles_search.png" width="400">
