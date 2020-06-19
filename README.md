@@ -19,7 +19,7 @@ You are tunneling between your PC and your mobile device as a proxy
   * [Common Questions & Bugs](#common-questions---bugs)
     + [Why I am not seeing the logs at all?](#why-i-am-not-seeing-the-logs-at-all)
     + [How to check if the port is in use?](#how-to-check-if-the-port-is-in-use)
-    + [Still not seeing the logs and it's not the port or device proxy](#still-not-seeing-the-logs-and-it-s-not-the-port-or-device-proxy)
+    + [Still not seeing the logs and it's not the port or device proxy](#still-not-seeing-the-logs-and-its-not-the-port-or-device-proxy)
 
 ## How to Install
 
