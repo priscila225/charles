@@ -101,17 +101,17 @@ Now the SSL proxying should work for your app's debug build variant, but not for
 
 1 - After all setup above to record a session you should enable the record button on charles UI.
 
-![Charles record](img/record.png "Record button"){:height="50%" width="50%"}
+<img src="https://github.com/priscila225/charles/blob/master/img/record.png" width="400">
 
 2 - Now open the debug app on your mobile device. **Navigate on app doing the steps provided for you.**
 3 - Start to search what you need (command + F on mac or ctrl + F on windows) to make sure you session gets that. Example: if its an ad search by keyword "pubads" or something like that. If it's ads tag, provide the tags on search.. 
 If its some url, provide part of the url and you will able to get it
 
-![Charles search](img/charles_search.png "Charles search"){:height="50%" width="50%"}
+<img src="https://github.com/priscila225/charles/blob/master/img/charles_search.png" width="400">
 
 After that you can save your session
 
-![Save session](img/save_session.png "Save Session"){:height="50%" width="50%"}
+<img src="https://github.com/priscila225/charles/blob/master/img/save_session.png" width="400">
 
 You can use this saved session to search what you want and have your internet back plus you can share this session of someone else.
 
@@ -119,8 +119,7 @@ You can use this saved session to search what you want and have your internet ba
 
 File -> Open session
 
-![Open session](img/open_session.png "Open Session"){:height="50%" width="50%"}
-
+<img src="https://github.com/priscila225/charles/blob/master/img/open_session.png" width="400">
 
 ## Common Questions & Bugs
 
@@ -137,7 +136,7 @@ lsof -nP -iTCP:8888 | grep LISTEN
 ```
 If the port is in use you can always change on Charles > Proxy > Proxy Settings -> set the value here
 
-![Charles port](img/port.png "Charles port"){:height="50%" width="50%"}
+<img src="https://github.com/priscila225/charles/blob/master/img/port.png" width="600">
 
 ### Still not seeing the logs and it's not the port or device proxy
 For some unknown reason sometimes the CA on charles change, it's rare but this happens. Some charles upgrade or another reason.
