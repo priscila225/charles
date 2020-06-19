@@ -101,17 +101,17 @@ Now the SSL proxying should work for your app's debug build variant, but not for
 
 1 - After all setup above to record a session you should enable the record button on charles UI.
 
-![Charles record](img/record.png "Record button")
+![Charles record](img/record.png "Record button"){:height="50%" width="50%"}
 
 2 - Now open the debug app on your mobile device. **Navigate on app doing the steps provided for you.**
 3 - Start to search what you need (command + F on mac or ctrl + F on windows) to make sure you session gets that. Example: if its an ad search by keyword "pubads" or something like that. If it's ads tag, provide the tags on search.. 
 If its some url, provide part of the url and you will able to get it
 
-![Charles search](img/charles_search.png "Charles search")
+![Charles search](img/charles_search.png "Charles search"){:height="50%" width="50%"}
 
 After that you can save your session
 
-![Save session](img/save_session.png "Save Session")
+![Save session](img/save_session.png "Save Session"){:height="50%" width="50%"}
 
 You can use this saved session to search what you want and have your internet back plus you can share this session of someone else.
 
@@ -119,26 +119,26 @@ You can use this saved session to search what you want and have your internet ba
 
 File -> Open session
 
-![Open session](img/open_session.png "Open Session")
+![Open session](img/open_session.png "Open Session"){:height="50%" width="50%"}
 
 
 ## Common Questions & Bugs
 
-1. Why I am not seeing the logs at all? 
+### Why I am not seeing the logs at all? 
 
-1 - First : double check on your mobile device if the certificate is installed
-2 - Check if you set the proxy on mobile (sometimes we forgot to set it to match with charles)
-3 - Verify if the port you choose (default on charles is 8888) is not being used by another proccess (this occurs to me twice)
+1. First : double check on your mobile device if the certificate is installed
+2. Check if you set the proxy on mobile (sometimes we forgot to set it to match with charles)
+3. Verify if the port you choose (default on charles is 8888) is not being used by another proccess (this occurs to me twice)
 You can change the port for another value 
 
-2. How to check if the port is in use?
+### How to check if the port is in use?
 ```shell
 lsof -nP -iTCP:8888 | grep LISTEN
 ```
 If the port is in use you can always change on Charles > Proxy > Proxy Settings -> set the value here
 
-![Charles port](img/port.png "Charles port")
+![Charles port](img/port.png "Charles port"){:height="50%" width="50%"}
 
-3. Still not seeing the logs and it's not the port or device proxy
+### Still not seeing the logs and it's not the port or device proxy
 For some unknown reason sometimes the CA on charles change, it's rare but this happens. Some charles upgrade or another reason.
 Remember to check CA again and go to install step on the CA part.
