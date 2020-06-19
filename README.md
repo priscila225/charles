@@ -47,7 +47,7 @@ The certificate needs to be updated to work properly.
         
         <img src="https://github.com/thyrlian/Charles-Proxy-Mobile-Guide/blob/master/Screenshots/Android/Wi-Fi.png" width="256">
     
-    * Launch **Browser**, visit https://chls.pro/ssl, save the certificate
+    * Launch your mobile **Browser**, visit https://chls.pro/ssl, save the certificate
     
     <img src="https://github.com/thyrlian/Charles-Proxy-Mobile-Guide/blob/master/Screenshots/Android/certificate.png" width="256">
     
@@ -93,3 +93,19 @@ The certificate needs to be updated to work properly.
     ```
 
 Now the SSL proxying should work for your app's debug build variant, but not for release build variant.
+
+
+## Common Questions & Bugs
+
+1. Why I am not seeing the logs at all? 
+
+1 - First : double check on your mobile device if the certificate is installed
+2 - Check if you set the proxy on mobile (sometimes we forgot to set it to match with charles)
+3 - Verify if the port you choose (default on charles is 8888) is not being used by another proccess (this occurs to me twice)
+You can change the port for another value 
+
+2. How to check if the port is in use?
+```shell
+lsof -nP -iTCP:8888 | grep LISTEN
+```
+If the port is in use you can always change on Charles > Proxy > Proxy Settings -> set the value here
