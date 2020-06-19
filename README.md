@@ -4,6 +4,9 @@
 
 [Charles](https://www.charlesproxy.com/) is an HTTP proxy / HTTP monitor / Reverse Proxy that enables a developer to view all of the HTTP and SSL / HTTPS traffic between their machine and the Internet. This includes requests, responses and the HTTP headers (which contain the cookies and caching information).
 
+When you enable charles you will stop your external internet accesss so it's expected to don't be able to open your PC browser and others connections in there. 
+You are tunneling between your PC and your mobile device as a proxy
+
 ## How to Install
 
 Note: If you update your PC OS or your mobile OS make sure you install the root certificate again 
@@ -94,6 +97,30 @@ The certificate needs to be updated to work properly.
 
 Now the SSL proxying should work for your app's debug build variant, but not for release build variant.
 
+## How to get the information you want?
+
+1 - After all setup above to record a session you should enable the record button on charles UI.
+
+![Charles record](img/record.png "Record button")
+
+2 - Now open the debug app on your mobile device. **Navigate on app doing the steps provided for you.**
+3 - Start to search what you need (command + F on mac or ctrl + F on windows) to make sure you session gets that. Example: if its an ad search by keyword "pubads" or something like that. If it's ads tag, provide the tags on search.. 
+If its some url, provide part of the url and you will able to get it
+
+![Charles search](img/charles_search.png "Charles search")
+
+After that you can save your session
+
+![Save session](img/save_session.png "Save Session")
+
+You can use this saved session to search what you want and have your internet back plus you can share this session of someone else.
+
+## How to import session?
+
+File -> Open session
+
+![Open session](img/open_session.png "Open Session")
+
 
 ## Common Questions & Bugs
 
@@ -109,3 +136,9 @@ You can change the port for another value
 lsof -nP -iTCP:8888 | grep LISTEN
 ```
 If the port is in use you can always change on Charles > Proxy > Proxy Settings -> set the value here
+
+![Charles port](img/port.png "Charles port")
+
+3. Still not seeing the logs and it's not the port or device proxy
+For some unknown reason sometimes the CA on charles change, it's rare but this happens. Some charles upgrade or another reason.
+Remember to check CA again and go to install step on the CA part.
