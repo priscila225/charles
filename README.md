@@ -7,6 +7,20 @@
 When you enable charles you will stop your external internet accesss so it's expected to don't be able to open your PC browser and others connections in there. 
 You are tunneling between your PC and your mobile device as a proxy
 
+## Table of Contents
+
+- [Charles Proxy Mobile Guide](#charles-proxy-mobile-guide)
+  * [Intro](#intro)
+  * [How to Install](#how-to-install)
+    + [Android](#android)
+      - [Android N (7.0, API level 24) and afterwards](#android-n--70--api-level-24--and-afterwards)
+  * [How to get the information you want?](#how-to-get-the-information-you-want-)
+  * [How to import session?](#how-to-import-session-)
+  * [Common Questions & Bugs](#common-questions---bugs)
+    + [Why I am not seeing the logs at all?](#why-i-am-not-seeing-the-logs-at-all-)
+    + [How to check if the port is in use?](#how-to-check-if-the-port-is-in-use-)
+    + [Still not seeing the logs and it's not the port or device proxy](#still-not-seeing-the-logs-and-it-s-not-the-port-or-device-proxy)
+
 ## How to Install
 
 Note: If you update your PC OS or your mobile OS make sure you install the root certificate again 
